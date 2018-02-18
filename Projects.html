@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kyle Daly</title>
+		<meta http-equi="X-UA-Compatible" content="IE=Edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+		
+		</script>
+
+		<meta name="fb_admins_meta_tag" content>
+
+	</head>
+	<body>
+		<div class="container" style="background-color:#5d5d5d">
+			<div class="jumbotron" style="margin-bottom:0;background-image:url(images/blue-cubes-header.jpg">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8">
+							<h1>Kyle Daly</h1>
+							<p style="padding-left:5em">Game Developer</p>
+						</div>
+						<div class="col-sm-4">
+							<i class="fa fa-git-square" style="font-size:36px;color:#6e5494;float:right"></i>
+							<i class="fa fa-twitter-square" style="font-size:36px;color:#1DA1F2;float:right;padding-right:5px"></i>
+							<i class="fa fa-youtube-play" style="font-size:36px; color:red;float:right;padding-right:5px"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-inverse" style="margin-top: 0;margin-bottom:0">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="KyleDaly.html">Home</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Projects</a></li>
+								<li><a href="#">GitHub</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container" style="background-color:#5d5d5d">
+			<div class="container" style="margin-bottom:20px">
+				<h2>Deep Dark</h2>
+				<p>
+				Deep Dark is game developed for Global Game Jam in 2017. The theme that year was "waves." Our idea for the game was you are little creature searching for food<br> on the ocean floor. Since no light is at the ocean floor the player must rely on sonar to find food and avoid enemies hiding in the dark.
+				</p>
+				<a href="https://globalgamejam.org/2017/games/deep-dark">Deep Dark</a>
+				<div class="row">
+					<div class="col-sm-4">
+						<img id="myImg" src="images/DeepDarkLogo.png" class="img-responsive" style="width:100%" alt="Deep Dark Logo">
+					</div>
+					<div class="col-sm-4">
+						<img src="images/Credits.png" class="img-responsive" style="width:50%" alt="Deep Dark Credits">
+					</div>
+					<div class="col-sm-4">
+						<img src="images/DeepDarkGame.png" class="img-responsive" style="width:90%" alt="Deep Dark Gameplay" styl="padding-right:10px">
+					</div>
+				</div>
+				<div class="row">
+					<h2>Grounded</h2>
+					<p>
+					Grounded is a game developed for CMU's Create! 24 hour event.
+					</p>
+					<div class="row">
+						<div class="col-sm-4">
+							<img src="images/GroundedMenu.png" class="img-responsive" style="width:90%" alt="Grounded Menu">
+						</div>
+						<div class="col-sm-4">
+							<img src="images/GroundFirstRoom.png" class="img-responsive" style="width:90%" alt="Grounded First Room">
+						</div>
+						<div class="col-sm-4">
+							<img src="images/GroundedLvgRoom.png" class="img-responsive" style="width:90%" alt="Grounded Living Room">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<h2>RPG</h2>
+					<p>
+						Filler
+					</p>
+					<div class="row">
+						<div class="col-sm-4">
+							<img src="images/rpg.png" class="img-responsive" style="100%" alt="Rpg">
+						</div>
+						<div class="col-sm-4">
+							<img src="images/rpg1.png" class="img-responsive" style="100%" alt="Rpg 1">
+						</div>
+					</div>
+					<div class="row" style="padding-top: 10px">
+						<div class="col-sm-4">
+							<img src="images/rpg3.png" class="img-responsive" style="100%" alt="Rpg 2">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<video style="display:block; margin: 0 auto;" width="800" height="500" controls>
+						<source src="Final.mp4" type="video/mp4">
+						Your browser does not support this video tag.
+					</video>
+				</div>
+			</div>
+		</div>
+		<script>
+			var modal = document.getElementById('myModal');
+			
+			var img = document.getElementById('myImg');
+			var modalImg = document.getElementById("img01");
+			var captionText = document.getElementById("caption");
+			img.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				captionText.innerHTML = this.alt;
+				
+			var span = document.getElementById("close")[0];
+			
+			span.onclick = function(){
+				modal.style.display = "none";
+			}
+			</script>
+	</body>
+	<footer>
+
+	</footer>
+</html>

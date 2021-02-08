@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
+		<link rel="stylesheet" href="./css/projects.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Optional theme -->
@@ -65,13 +66,13 @@
 				<a href="https://globalgamejam.org/2017/games/deep-dark">Deep Dark</a>
 				<div class="row">
 					<div class="col-sm-4">
-						<img id="myImg" src="images/DeepDarkLogo.png" class="img-responsive" style="width:100%" alt="Deep Dark Logo">
+						<img id="myImg" src="images/DeepDarkLogo.png" class="img-responsive" style="width:100%" alt="Deep Dark Logo" onclick="onClick(this)">
 					</div>
 					<div class="col-sm-4">
-						<img src="images/Credits.png" class="img-responsive" style="width:50%" alt="Deep Dark Credits">
+						<img id="myImg" src="images/Credits.png" class="img-responsive" style="width:50%" alt="Deep Dark Credits" onclick="onClick(this)">
 					</div>
 					<div class="col-sm-4">
-						<img src="images/DeepDarkGame.PNG" class="img-responsive" style="width:90%" alt="Deep Dark Gameplay" styl="padding-right:10px">
+						<img id="myImg" src="images/DeepDarkGame.PNG" class="img-responsive" style="width:90%" alt="Deep Dark Gameplay" styl="padding-right:10px" onclick="onClick(this)">
 					</div>
 				</div>
 				<div class="row">
@@ -82,13 +83,13 @@
 					</p>
 					<div class="row">
 						<div class="col-sm-4">
-							<img src="images/GroundedMenu.PNG" class="img-responsive" style="width:90%" alt="Grounded Menu">
+							<img id="myImg" src="images/GroundedMenu.PNG" class="img-responsive" style="width:90%" alt="Grounded Menu" onclick="onClick(this)">
 						</div>
 						<div class="col-sm-4">
-							<img src="images/GroundFirstRoom.PNG" class="img-responsive" style="width:90%" alt="Grounded First Room">
+							<img id="myImg" src="images/GroundFirstRoom.PNG" class="img-responsive" style="width:90%" alt="Grounded First Room" onclick="onClick(this)">
 						</div>
 						<div class="col-sm-4">
-							<img src="images/GroundedLvgRoom.PNG" class="img-responsive" style="width:90%" alt="Grounded Living Room">
+							<img id="myImg" src="images/GroundedLvgRoom.PNG" class="img-responsive" style="width:90%" alt="Grounded Living Room" onclick="onClick(this)">
 						</div>
 					</div>
 				</div>
@@ -100,15 +101,15 @@
 					</p>
 					<div class="row">
 						<div class="col-sm-4">
-							<img src="images/rpg.PNG" class="img-responsive" style="100%" alt="Rpg">
+							<img id="myImg" src="images/rpg.PNG" class="img-responsive" style="100%" alt="Rpg" onclick="onClick(this)">
 						</div>
 						<div class="col-sm-4">
-							<img src="images/rpg1.PNG" class="img-responsive" style="100%" alt="Rpg 1">
+							<img id="myImg" src="images/rpg1.PNG" class="img-responsive" style="100%" alt="Rpg 1" onclick="onClick(this)">
 						</div>
 					</div>
 					<div class="row" style="padding-top: 10px">
 						<div class="col-sm-4">
-							<img src="images/rpg3.PNG" class="img-responsive" style="100%" alt="Rpg 2">
+							<img id="myImg" src="images/rpg3.PNG" class="img-responsive" style="100%" alt="Rpg 2"onclick="onClick(this)">
 						</div>
 					</div>
 				</div>
@@ -119,21 +120,19 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Modal Element -->
+		<div id="modal" class="modal" onclick="this.style.display='none'">
+			<span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+			<div class="modal-content">
+				<img id="imgSelect" style="max-width: 100%;">
+			</div>
+		</div>
+
 		<script>
-			var modal = document.getElementById('myModal');
-			
-			var img = document.getElementById('myImg');
-			var modalImg = document.getElementById("img01");
-			var captionText = document.getElementById("caption");
-			img.onclick = function(){
-				modal.style.display = "block";
-				modalImg.src = this.src;
-				captionText.innerHTML = this.alt;
-				
-			var span = document.getElementById("close")[0];
-			
-			span.onclick = function(){
-				modal.style.display = "none";
+			function onClick(element) {
+				document.getElementById("imgSelect").src = element.src;
+				document.getElementById("modal").style.display = "block";
 			}
 			</script>
 	</body>
